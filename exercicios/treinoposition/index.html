@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .teste {
+            height: 400px;
+        }
+
+        .teste > div {
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+        }
+
+        .ciano {
+            background-color: cyan;
+            position: relative;
+            top: 50%;
+        }
+
+        .preto {
+            background-color: black;
+            position: relative;
+        }
+
+        .preto:hover {
+            z-index: -1;
+        }
+
+        p {
+            color: white;
+            margin-top: 50%;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="teste">
+        <div class="ciano">
+            <p>Ciano<p>
+        </div>
+        <div class="preto">
+            <p>Preto</p>
+        </div>
+    </div>
+</body>
+</html>
