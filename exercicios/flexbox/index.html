@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            height: 100px;
+            justify-content: center;
+        }
+
+        .container > div {
+            width: 100px;
+            height: 200px;
+        }
+
+        .ciano {
+            background-color: cyan;
+        }
+
+        .preto {
+            background-color: black;
+        }
+
+        .laranja {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ciano"></div>
+        <div class="preto"></div>
+        <div class="laranja"></div>
+    </div>
+</body>
+</html>
