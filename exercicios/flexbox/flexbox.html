@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <style>
+        body {
+            height: 100vh;
+        }
+        
         .container {
-            height: 500px;
-            border: 1px solid black;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 850px;
         }
-
-        .red {
-            background-color: darkred;
-        }
-
-        .verde {
-            background-color: darkgreen;
-        }
-
-        .azul {
-            background-color: darkblue;
+        
+        .container div {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: darksalmon;
+            width: 20%;
+            
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="red"></div>
-        <div class="verde"></div>
-        <div class="azul"></div>
+        <div class="red"><h1>Box 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, deleniti.</p>
+        </div>
+        <div class="verde"><h1>Box 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, deleniti.</p></div>
+        <div class="azul"><h1>Box 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, deleniti.</p></div>
     </div>
 </body>
 </html>
